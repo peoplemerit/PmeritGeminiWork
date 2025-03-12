@@ -1,21 +1,16 @@
 body {
-    font-family: Arial, Helvetica, Verdana, sans-serif;
+    font-family: sans-serif;
     margin: 0;
     padding: 0; /* Remove padding from body */
     background-color: #f0f0f0;
 }
-/*start
-body {
-    font-family: Arial, Helvetica, Verdana, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f0f0f0;
-}
-/*end
+
+/* ... (previous CSS code) ... */
+
 /* Mission Statement Styling */
 .mission-container {
     text-align: center;
-    margin: 20px auto;
+    margin: 30px auto 20px; /* Added top margin */
     max-width: 60%;
     background-color: #fff;
     padding: 20px;
@@ -23,22 +18,50 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Homepage Features Styling */
-.homepage-features {
+.mission-container p {
+    line-height: 1.6; /* Increased line-height */
+    font-size: 1.1em; /* Increased font-size */
+}
+
+/* Header Adjustments */
+header {
     display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
-    margin-bottom: 20px;
+    justify-content: space-between; /* Changed justify-content */
+    align-items: center;
 }
 
-.chatbot-placeholder,
-.image-to-text-placeholder {
-    width: 45%;
-    padding: 20px;
+.language-switcher {
+    margin-left: auto; /* Push to right */
+}
+
+.language-switcher select {
+    padding: 8px;
+    border-radius: 4px;
     border: 1px solid #ccc;
-    border-radius: 8px;
 }
 
+.converter-button {
+    background-color: #3498db;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+/* Chatbot Container Styling */
+.chatbot-container {
+    max-width: 60%;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* ... (rest of the CSS code) ... */
 /* Button Container Styling */
 .button-container {
     text-align: center;
