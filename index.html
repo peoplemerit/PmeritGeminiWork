@@ -17,6 +17,15 @@
                 <li><a href="#">Contact</a></li>
             </ul>
         </nav>
+        <div class="language-switcher">
+            <select id="languageSelect">
+                <option value="en">English</option>
+                <option value="yo">Yoruba</option>
+                <option value="ig">Igbo</option>
+                <option value="ha">Hausa</option>
+            </select>
+        </div>
+        <button class="converter-button">Converter Image to Text</button>
     </header>
 
     <main>
@@ -24,18 +33,10 @@
             <p>Our mission is to empower people with practical skills and knowledge to improve their lives. We believe that by learning new skills, everyone can create better opportunities for themselves, support their families, and build a brighter future.</p>
         </div>
 
-        <div class="homepage-features">
-            <div class="chatbot-placeholder">
-                <h2>Chatbot</h2>
-                <p>Chat with our AI chatbot to get answers to your questions.</p>
-                [Chatbot Placeholder]
-            </div>
-
-            <div class="image-to-text-placeholder">
-                <h2>Image to Text Converter</h2>
-                <p>Convert images to text with our AI-powered tool.</p>
-                [Image to Text Placeholder]
-            </div>
+        <div class="chatbot-container">
+            <h2>Chatbot</h2>
+            <p>Chat with our AI chatbot to get answers to your questions.</p>
+            [Chatbot Placeholder]
         </div>
 
         <div class="button-container">
@@ -47,4 +48,21 @@
         <ul>
             <li><a href="https://www.16personalities.com/" target="_blank">16 Personalities</a> - This popular test is based on the Myers-Briggs Type Indicator (MBTI) and provides insights into your personality type.</li>
             <li><a href="https://www.truity.com/test/big-five-personality-test" target="_blank">Big Five Personality Test</a> - This test measures five broad dimensions of personality: openness, conscientiousness, extraversion, agreeableness, and neuroticism.</li>
-            <li><a href="https://www.careeronestop.org/Toolkit/Skills/skills-assessment.aspx" target="_blank">Skills Assessment</a> - This tool from CareerOneStop helps you identify your skills and match them to potential careers.</
+            <li><a href="https://www.careeronestop.org/Toolkit/Skills/skills-assessment.aspx" target="_blank">Skills Assessment</a> - This tool from CareerOneStop helps you identify your skills and match them to potential careers.</li>
+        </ul>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 PMERIT</p>
+    </footer>
+
+    <script>
+        document.getElementById('languageSelect').addEventListener('change', function() {
+            const selectedLanguage = this.value;
+            // Implement language switching logic here
+            console.log(`Language switched to: ${selectedLanguage}`);
+        });
+    </script>
+
+</body>
+</html>
